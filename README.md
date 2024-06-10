@@ -1,6 +1,8 @@
 # nbrpuzzle3
 Solving app for number games. v 0.0.1 pre, pre alpha
 
+## In Development not finished YET!
+
 ### Sudoku Solver Summary
 
 1. **System**: The Sudoku grid is divided into 9 large squares (A to I) with rows and columns labeled 1 to 9.
