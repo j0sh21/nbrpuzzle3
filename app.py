@@ -68,4 +68,4 @@ if solve_sudoku(grid):
     print("Sudoku solved successfully!")
     print_grid(grid)
 else:
-    print("No solution exists.")
+    print("No or multiple solution exists.")
