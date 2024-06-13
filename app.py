@@ -49,6 +49,30 @@ solution_grid_3 = [
     [3, 4, 6, 7, 5, 9, 2, 8, 1]
 ]
 
+easy_sudoku = [
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
+    [6, 0, 0, 1, 9, 5, 0, 0, 0],
+    [0, 9, 8, 0, 0, 0, 0, 6, 0],
+    [8, 0, 0, 0, 6, 0, 0, 0, 3],
+    [4, 0, 0, 8, 0, 3, 0, 0, 1],
+    [7, 0, 0, 0, 2, 0, 0, 0, 6],
+    [0, 6, 0, 0, 0, 0, 2, 8, 0],
+    [0, 0, 0, 4, 1, 9, 0, 0, 5],
+    [0, 0, 0, 0, 8, 0, 0, 7, 9]
+]
+
+sudoku_with_several_solutions = [
+    [0, 0, 0, 0, 5, 0, 2, 0, 0],
+    [0, 0, 0, 0, 4, 7, 9, 0, 0],
+    [1, 0, 5, 0, 0, 8, 0, 0, 0],
+    [2, 4, 0, 0, 0, 0, 0, 9, 0],
+    [3, 0, 7, 0, 0, 0, 0, 4, 6],
+    [0, 0, 0, 7, 0, 0, 7, 5, 3],
+    [0, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 2, 1, 5, 9, 0, 0, 0],
+    [0, 0, 4, 7, 0, 0, 0, 0, 0]
+]
+
 def print_rows(task_p):
     lines = []
     for line_number, line in enumerate(task_p):
@@ -104,7 +128,7 @@ def show_sudoku(puzzle):
             missing.append(8)
         if 9 not in row:
             missing.append(9)
-        print(f"Es fehlen in der Zeile: {len(missing)} Werte, nämlich: {missing}")
+        print(f"Es fehlen in der Zeile {({rows.index(row)})}: {len(missing)} Werte, nämlich: {missing}")
 
     for column in columns:
         missing_c = []
@@ -126,7 +150,7 @@ def show_sudoku(puzzle):
             missing_c.append(8)
         if 9 not in column:
             missing_c.append(9)
-        print(f"Es fehlen in der Spalte: {len(missing_c)} Werte, nämlich: {missing_c}")
+        print(f"Es fehlen in der Spalte {({columns.index(column)})}: {len(missing_c)} Werte, nämlich: {missing_c}")
 
     for square in squares:
         missing_s = []
@@ -148,7 +172,7 @@ def show_sudoku(puzzle):
             missing_s.append(8)
         if 9 not in square:
             missing_s.append(9)
-        print(f"Es fehlen im Quardrat: {len(missing_s)} Werte, nämlich: {missing_s}")
+        print(f"Es fehlen im Quardrat {({squares.index(square)})}: {len(missing_s)} Werte, nämlich: {missing_s}")
 
 
 
