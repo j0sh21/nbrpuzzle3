@@ -73,6 +73,18 @@ sudoku_with_several_solutions = [
     [0, 0, 4, 7, 0, 0, 0, 0, 0]
 ]
 
+sudoku_grid_prisma = [
+	[0, 0, 0, 8, 1, 0, 0, 0, 0],
+	[4, 0, 0, 0, 5, 6, 0, 3, 2],
+	[2, 5, 0, 0, 0, 0, 8, 0, 3],
+	[2, 5, 0, 0, 0, 0, 8, 0, 3],
+	[0, 0, 4, 0, 7, 0, 9, 0, 0],
+	[6, 0, 8, 0, 0, 0, 0, 7, 1],
+	[0, 0, 1, 0, 0, 7, 0, 0, 0],
+	[7, 2, 0, 3, 8, 0, 0, 0, 9],
+	[0, 0, 0, 0, 6, 9, 0, 0, 0]
+]
+
 def print_rows(task_p):
     lines = []
     for line_number, line in enumerate(task_p):
@@ -128,7 +140,7 @@ def show_sudoku(puzzle):
             missing.append(8)
         if 9 not in row:
             missing.append(9)
-        print(f"Es fehlen in der Zeile {({rows.index(row)})}: {len(missing)} Werte, nämlich: {missing}")
+        print(f"Es fehlen in der Zeile {({rows.index(row)})}: {len(missing)}Werte: {missing}")
 
     for column in columns:
         missing_c = []
@@ -150,7 +162,7 @@ def show_sudoku(puzzle):
             missing_c.append(8)
         if 9 not in column:
             missing_c.append(9)
-        print(f"Es fehlen in der Spalte {({columns.index(column)})}: {len(missing_c)} Werte, nämlich: {missing_c}")
+        print(f"Es fehlen in der Spalte {({columns.index(column)})}: {len(missing_c)}Werte: {missing_c}")
 
     for square in squares:
         missing_s = []
@@ -172,9 +184,11 @@ def show_sudoku(puzzle):
             missing_s.append(8)
         if 9 not in square:
             missing_s.append(9)
-        print(f"Es fehlen im Quardrat {({squares.index(square)})}: {len(missing_s)} Werte, nämlich: {missing_s}")
+        print(f"Es fehlen im Quardrat {({squares.index(square)})}: {len(missing_s)}Werte: {missing_s}")
 
-
+    return missing, missing_c, missing_s
 
 if __name__ == "__main__":
-    show_sudoku(grid)
+    a, b, c = show_sudoku(sudoku_grid_prisma)
+
+
