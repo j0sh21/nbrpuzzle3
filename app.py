@@ -85,6 +85,109 @@ sudoku_grid_prisma = [
 	[0, 0, 0, 0, 6, 9, 0, 0, 0]
 ]
 
+##TODO:
+
+# Sudoku Aufgabe 1
+puzzle1 = [
+    [2, 0, 0, 0, 0, 6, 0, 3, 0],
+    [0, 1, 0, 0, 0, 0, 8, 0, 0],
+    [3, 6, 0, 0, 0, 0, 0, 7, 0],
+    [0, 5, 0, 0, 0, 0, 0, 6, 0],
+    [0, 0, 0, 3, 2, 0, 0, 0, 0],
+    [0, 9, 7, 0, 0, 0, 0, 5, 0],
+    [1, 0, 0, 0, 4, 0, 0, 0, 8],
+    [0, 0, 0, 0, 8, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 6, 0, 3],
+]
+
+solution1 = [
+    [8, 5, 7, 9, 2, 6, 4, 1, 3],
+    [2, 3, 1, 4, 7, 5, 6, 9, 8],
+    [4, 9, 6, 1, 8, 3, 5, 7, 2],
+    [3, 6, 4, 5, 9, 7, 8, 2, 1],
+    [9, 2, 5, 8, 1, 4, 3, 6, 7],
+    [1, 7, 8, 3, 6, 2, 9, 4, 5],
+    [6, 8, 9, 7, 3, 1, 2, 5, 4],
+    [5, 1, 3, 2, 4, 9, 7, 8, 6],
+    [7, 4, 2, 6, 5, 8, 1, 3, 9],
+]
+
+# Sudoku Aufgabe 2
+puzzle2 = [
+    [7, 0, 0, 0, 0, 0, 1, 0, 4],
+    [6, 0, 0, 0, 0, 4, 0, 0, 0],
+    [0, 4, 6, 0, 7, 0, 0, 0, 9],
+    [8, 3, 0, 0, 0, 2, 1, 0, 0],
+    [0, 0, 0, 0, 3, 4, 0, 0, 0],
+    [0, 1, 5, 0, 9, 6, 0, 0, 3],
+    [2, 5, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 6, 0, 0, 0, 0],
+    [0, 0, 0, 3, 0, 9, 0, 0, 0],
+]
+
+solution2 = [
+    [3, 7, 5, 8, 9, 4, 2, 1, 6],
+    [6, 9, 2, 1, 5, 3, 8, 7, 4],
+    [8, 1, 4, 6, 2, 7, 9, 3, 5],
+    [1, 6, 8, 7, 3, 5, 4, 2, 9],
+    [9, 4, 3, 2, 1, 8, 5, 6, 7],
+    [5, 2, 7, 9, 4, 6, 3, 8, 1],
+    [7, 3, 1, 5, 8, 9, 6, 4, 2],
+    [2, 8, 9, 4, 6, 1, 7, 5, 3],
+    [4, 5, 6, 3, 7, 2, 1, 9, 8],
+]
+
+# Sudoku Aufgabe 3
+puzzle3 = [
+    [2, 0, 0, 3, 0, 0, 0, 0, 9],
+    [0, 8, 0, 7, 0, 0, 4, 0, 0],
+    [0, 4, 8, 0, 0, 9, 7, 0, 0],
+    [1, 0, 0, 5, 8, 0, 0, 9, 0],
+    [9, 6, 0, 0, 4, 0, 3, 0, 0],
+    [0, 0, 0, 0, 6, 3, 0, 1, 0],
+    [0, 0, 4, 6, 0, 0, 3, 0, 0],
+    [3, 7, 0, 0, 0, 0, 5, 0, 6],
+    [0, 0, 0, 0, 0, 2, 0, 4, 0],
+]
+
+solution3 = [
+    [2, 7, 1, 3, 5, 4, 6, 8, 9],
+    [5, 9, 8, 6, 7, 1, 4, 2, 3],
+    [6, 4, 3, 8, 2, 9, 5, 7, 1],
+    [1, 3, 7, 5, 4, 2, 9, 6, 8],
+    [4, 8, 2, 9, 3, 6, 1, 5, 7],
+    [9, 5, 6, 1, 8, 7, 2, 3, 4],
+    [8, 6, 5, 4, 9, 3, 7, 1, 2],
+    [7, 1, 4, 2, 6, 8, 3, 9, 5],
+    [3, 2, 9, 7, 1, 5, 8, 4, 6],
+]
+
+# Sudoku Aufgabe 4
+puzzle4 = [
+    [2, 1, 0, 0, 4, 8, 0, 0, 0],
+    [1, 0, 8, 9, 0, 7, 0, 0, 0],
+    [7, 0, 6, 0, 0, 0, 2, 1, 4],
+    [0, 0, 0, 3, 0, 0, 7, 4, 0],
+    [4, 0, 5, 8, 0, 0, 0, 0, 0],
+    [5, 7, 0, 2, 0, 6, 0, 0, 8],
+    [0, 0, 0, 0, 8, 3, 9, 0, 5],
+    [0, 0, 0, 0, 0, 0, 3, 7, 5],
+    [3, 7, 5, 0, 2, 0, 0, 0, 0],
+]
+
+solution4 = [
+    [3, 7, 2, 1, 5, 4, 8, 9, 6],
+    [6, 9, 4, 8, 3, 2, 7, 1, 5],
+    [1, 5, 8, 9, 6, 7, 4, 2, 3],
+    [7, 3, 6, 5, 2, 9, 1, 8, 4],
+    [9, 8, 1, 4, 7, 3, 5, 6, 2],
+    [4, 2, 5, 6, 8, 1, 3, 7, 9],
+    [5, 4, 7, 2, 1, 6, 9, 3, 8],
+    [2, 1, 9, 3, 4, 8, 6, 5, 7],
+    [8, 6, 3, 7, 9, 5, 2, 4, 1],
+]
+
+
 def print_rows(task_p):
     lines = []
     for line_number, line in enumerate(task_p):
@@ -96,7 +199,7 @@ def print_cols(task_p):
     columns = []
     horizontal_grid = zip(*task_p)
     for line_number, colum in enumerate(horizontal_grid):
-        print(f"Spalte: {line_number+1}   {colum}")
+        print(f"Spalte: {line_number+1}  {colum}")
         columns.append(colum)
     return columns
 
@@ -112,14 +215,14 @@ def print_squares(grid):
             squares.append(square)
 
     for square_number, square in enumerate(squares):
-        print(f"Quadrat {square_number + 1}: {square}")
+        print(f"Quadrat: {square_number + 1} {square}")
     return squares
 
 def show_sudoku(puzzle):
     rows = print_rows(puzzle)
     columns = print_cols(puzzle)
     squares = print_squares(puzzle)
-
+    print("\n__________Missing Values______________\n")
     for row in rows:
         missing = []
         if 1 not in row:
@@ -140,8 +243,8 @@ def show_sudoku(puzzle):
             missing.append(8)
         if 9 not in row:
             missing.append(9)
-        print(f"Es fehlen in der Zeile {({rows.index(row)})}: {len(missing)}Werte: {missing}")
-
+        print(f"Z: {({rows.index(row)})}  {len(missing)} V: {missing}")
+    print(f'{"_" * 39}')
     for column in columns:
         missing_c = []
         if 1 not in column:
@@ -163,7 +266,7 @@ def show_sudoku(puzzle):
         if 9 not in column:
             missing_c.append(9)
         print(f"Es fehlen in der Spalte {({columns.index(column)})}: {len(missing_c)}Werte: {missing_c}")
-
+    print(f'{"_"*39}')
     for square in squares:
         missing_s = []
         if 1 not in square:
@@ -185,7 +288,7 @@ def show_sudoku(puzzle):
         if 9 not in square:
             missing_s.append(9)
         print(f"Es fehlen im Quardrat {({squares.index(square)})}: {len(missing_s)}Werte: {missing_s}")
-
+    print(f'{"_"*39}')
     return missing, missing_c, missing_s
 
 if __name__ == "__main__":
