@@ -102,16 +102,18 @@ sudoku = [
 def print_rows(task_p):
     lines = []
     for line_number, line in enumerate(task_p):
-        print(f"Zeile: {line_number+1}   {line}")
+        print(f"Zeile  : {line_number+1}   {line}")
         lines.append(line)
+    print("\n")
     return lines
 
 def print_cols(task_p):
     columns = []
     horizontal_grid = zip(*task_p)
     for line_number, colum in enumerate(horizontal_grid):
-        print(f"Spalte: {line_number+1}  {colum}")
+        print(f"Spalte : {line_number+1}  {colum}")
         columns.append(colum)
+    print("\n")
     return columns
 
 
@@ -176,7 +178,7 @@ def show_sudoku(puzzle):
             missing_c.append(8)
         if 9 not in column:
             missing_c.append(9)
-        print(f"Es fehlen in der Spalte {({columns.index(column)})}: {len(missing_c)}Werte: {missing_c}")
+        print(f"S: {({columns.index(column)})}  {len(missing_c)}V: {missing_c}")
     print(f'{"_"*39}')
     for square in squares:
         missing_s = []
@@ -198,7 +200,7 @@ def show_sudoku(puzzle):
             missing_s.append(8)
         if 9 not in square:
             missing_s.append(9)
-        print(f"Es fehlen im Quardrat {({squares.index(square)})}: {len(missing_s)}Werte: {missing_s}")
+        print(f"Q: {({squares.index(square)})}  {len(missing_s)}V: {missing_s}")
     print(f'{"_"*39}')
     return missing, missing_c, missing_s
 
